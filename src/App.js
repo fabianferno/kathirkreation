@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import Index from "./pages/Index";
+import Error404 from "./pages/404";
+
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import AnimatedNavbar from 'animated-navbar';
+
+
+export default class App extends Component {
+  AnimatedNavbar.init({
+    'header' => '.header'
+});
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Index} />
+          <Route exact path="/404" component={Error404} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
-export default App;
