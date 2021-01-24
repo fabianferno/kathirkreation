@@ -1,16 +1,13 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+import logo from "../images/logo.svg";
+
+import "../App.scss";
+import { motion } from "framer-motion";
 
 // Import React Bootstrap
-import {
-  Button,
-  Container,
-  Form,
-  Navbar,
-  NavDropdown,
-  Nav,
-} from "react-bootstrap";
+import { Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
 
 export default class Index extends React.Component {
   render() {
@@ -21,20 +18,25 @@ export default class Index extends React.Component {
             <title>Kathir Kreation</title>
           </Helmet>
           <Navbar
-            className="py-5"
+            className="p-5"
             collapseOnSelect
             expand="lg"
             bg="dark"
-            variant="dark"
+            variant="primary"
           >
             <Navbar.Brand href="#home" className="font-weight-bold">
               Kathir Kreation
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle className="" aria-controls="responsive-navbar-nav">
+              <i
+                style={{ fontSize: "2rem" }}
+                className="fa text-primary fa-arrow-circle-down "
+              />
+            </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <Nav.Link href="#">About Us</Nav.Link>
+                <Nav.Link href="#">Services</Nav.Link>
                 <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
@@ -49,35 +51,40 @@ export default class Index extends React.Component {
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-              <Nav>
-                <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  Dank memes
-                </Nav.Link>
-              </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Container className="p-5 d-flex justify-content-center">
-            <Form>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
+          <Container id="hero" className="p-5 d-flex justify-content-center">
+            <motion.div
+              whileHover={{ scale: 2, rotate: -10 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -10,
+                borderRadius: "100%",
+              }}
+            >
+              <div className="card bg-primary">
+                <div className="card-body btn ">
+                  <h1 className="p-3">Kathir Kreation</h1>
+                </div>
+              </div>
+            </motion.div>
+          </Container>
 
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-              <Form.Group controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-            </Form>
+          <Container id="hero" className="p-5 d-flex justify-content-center">
+            <motion.div
+              whileHover={{ scale: 2, rotate: 10 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: 10,
+                borderRadius: "100%",
+              }}
+            >
+              <div className="card bg-primary">
+                <div className="card-body btn ">
+                  <img src={logo} alt="Kathir Kreation" srcset="" />
+                </div>
+              </div>
+            </motion.div>
           </Container>
         </React.Fragment>
       </HelmetProvider>

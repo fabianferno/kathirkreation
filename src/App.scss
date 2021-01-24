@@ -1,12 +1,18 @@
 /* The following block can be included in a custom.scss */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* make the customizations */
 $theme-colors: (
-    "primary":orange,
+    "primary":rgb(0, 255, 128),
     "dark":black,
-    "info": tomato,
+    "info": rgb(37, 33, 32),
     "danger": teal
 );
+
+// These are the defaults, but you can override any values
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap"
