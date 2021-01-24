@@ -3,7 +3,14 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import React Bootstrap
-import { Button, Container, Form, Navbar, NavDropdown, Nav } from "react-bootstrap";
+import {
+  Button,
+  Container,
+  Form,
+  Navbar,
+  NavDropdown,
+  Nav,
+} from "react-bootstrap";
 
 export default class Index extends React.Component {
   render() {
@@ -11,10 +18,18 @@ export default class Index extends React.Component {
       <HelmetProvider>
         <React.Fragment>
           <Helmet>
-            <title>Elevate | Pattarai</title>
+            <title>Kathir Kreation</title>
           </Helmet>
-          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar
+            className="py-5"
+            collapseOnSelect
+            expand="lg"
+            bg="dark"
+            variant="dark"
+          >
+            <Navbar.Brand href="#home" className="font-weight-bold">
+              Kathir Kreation
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">

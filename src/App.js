@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 import Error404 from "./pages/404";
 
 
-import './App.css';
+import './App.scss';
 
 
 export default class App extends Component {
