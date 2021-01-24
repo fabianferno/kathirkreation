@@ -11,13 +11,9 @@ import Error404 from "./pages/404";
 
 import './App.css';
 
-import AnimatedNavbar from 'animated-navbar';
-
 
 export default class App extends Component {
-  AnimatedNavbar.init({
-    'header' => '.header'
-});
+
   render() {
     return (
       <Router>
