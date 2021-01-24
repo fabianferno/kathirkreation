@@ -53,39 +53,71 @@ export default class Index extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Container id="hero" className="p-5 d-flex justify-content-center">
-            <motion.div
-              whileHover={{ scale: 2, rotate: -10 }}
-              whileTap={{
-                scale: 0.8,
-                rotate: -10,
-                borderRadius: "100%",
-              }}
-            >
-              <div className="card bg-primary">
+          <section
+            id="hero"
+            className="d-block d-md-flex bg-secondary justify-content-center align-items-center"
+          >
+            <Container className=" col-md-4 col-12 justify-content-center align-items-center">
+              <motion.div
+              animate={{ x: -20, y:-40 }}
+              transition={{ ease: "easeOut", duration: 3 }}
+                drag
+                dragConstraints={{
+                  left: -200,
+                  right: 200,
+                  top: -100,
+                  bottom: 200,
+                }}
+                className=" card bg-primary"
+                
+              >
                 <div className="card-body btn ">
-                  <h1 className="p-3">Kathir Kreation</h1>
+                  <h1 className="p-3 font-weight-bold text-right">
+                    Kathir Kreation
+                  </h1>
                 </div>
-              </div>
-            </motion.div>
-          </Container>
+              </motion.div>
+            </Container>
 
-          <Container id="hero" className="p-5 d-flex justify-content-center">
-            <motion.div
-              whileHover={{ scale: 2, rotate: 10 }}
-              whileTap={{
-                scale: 0.8,
-                rotate: 10,
-                borderRadius: "100%",
-              }}
-            >
-              <div className="card bg-primary">
+            <Container className=" col-md-4 col-12 justify-content-center align-items-center">
+              <motion.div
+              animate={{ x: 50, y:20 }}
+              transition={{ ease: "easeOut", duration: 2 }}
+                 drag
+                 dragConstraints={{
+                   left: -200,
+                   right: 200,
+                   top: -100,
+                   bottom: 200,
+                 }}
+                className="card bg-dark"
+              >
                 <div className="card-body btn ">
-                  <img src={logo} alt="Kathir Kreation" srcset="" />
+                  <h2 className="p-3text-right text-primary">
+                    We care for your creativity.
+                  </h2>
                 </div>
-              </div>
-            </motion.div>
-          </Container>
+              </motion.div>
+            </Container>
+
+            <Container className=" col-md-4 col-12 justify-content-center align-items-center">
+              <motion.div
+              
+                className=" card bg-primary"
+                whileHover={{ scale: 1.2, rotate: -7 }}
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -10,
+                }}
+              >
+                <div className="card-body btn ">
+                  <h1 className="p-3 font-weight-bold text-right">
+                    <img src={logo} height="240px" alt="Kathir Kreation" />
+                  </h1>
+                </div>
+              </motion.div>
+            </Container>
+          </section>
         </React.Fragment>
       </HelmetProvider>
     );

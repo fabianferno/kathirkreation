@@ -5,8 +5,11 @@ $theme-colors: (
     "primary":rgb(0, 255, 128),
     "dark":black,
     "info": rgb(37, 33, 32),
-    "danger": teal
+    "danger": teal,
+    "secondary": rgb(53, 53, 53)
 );
+
+
 
 // These are the defaults, but you can override any values
 $font-family-sans-serif: 'Montserrat', sans-serif;
