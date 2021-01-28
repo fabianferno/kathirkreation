@@ -134,3 +134,13 @@
     -o-user-select: none;
     user-select: none;
 }
+
+
+.logotextbg {
+	background-image: url(../images/text-face-logo.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+	background-repeat: no-repeat;
+	height: 20vh;
+	
+}

@@ -45,7 +45,7 @@ const Hero = ({
     <section {...props} className={outerClasses} style={{ paddingTop: "0px" }}>
       <div className="container">
         <p style={{ fontSize: "0.8em", textAlign: "end" }}>
-          CLICK AND DRAG ABOVE ^
+          Click & Drag ^
         </p>
         <div className={innerClasses}>
           <div className="hero-content">

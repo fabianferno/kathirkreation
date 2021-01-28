@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import textLogo from "../../assets/images/text-face-logo.svg";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -154,18 +153,16 @@ const Header = ({
         drag
         dragConstraints={{
           top: -50,
-          left: -50,
-          right: 50,
+          left: -0,
+          right: 0,
           bottom: 50,
         }}
-        style={{ padding: "40px", background: "rgba(24, 24, 24, 0.8)" }}
+        style={{ padding: "40px", background: "rgba(24, 24, 24, 0.6)"}}
         className="container"
       >
-        <img
-          alt="kathir-kreation-logo"
-          className="selectDisable reveal-from-bottom"
+        <div
+          className="selectDisable reveal-from-bottom logotextbg"
           data-reveal-delay="200"
-          src={textLogo}
         />
         
       </motion.div>
