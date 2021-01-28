@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import textLogo from "../../assets/images/text-face-logo.svg";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -147,13 +148,14 @@ const Header = ({
             </>
           )}
         </div>
-        <h1
-          style={{ textAlign:'center', fontSize: "4em", lineHeight:'80px', height:'120px' }}
-          className="mt-15 reveal-from-bottom"
+      </div>
+      <div style={{paddingTop:'150px'}} className='container'>
+        <img
+          style={{}}
+          className="selectDisable reveal-from-bottom"
           data-reveal-delay="200"
-        >
-          Kathir &nbsp;<div className="text-color-primary reveal-from-bottom">Kreation</div>
-        </h1>
+          src={textLogo}
+        />
       </div>
     </header>
   );
