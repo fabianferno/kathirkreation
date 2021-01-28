@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import textLogo from "../../assets/images/text-face-logo.svg";
 
 const propTypes = {
@@ -149,14 +150,25 @@ const Header = ({
           )}
         </div>
       </div>
-      <div style={{ paddingTop: "150px" }} className="container">
+      <motion.div
+        drag
+        dragConstraints={{
+          top: -50,
+          left: -50,
+          right: 50,
+          bottom: 50,
+        }}
+        style={{ padding: "40px", background: "rgba(24, 24, 24, 0.8)" }}
+        className="container"
+      >
         <img
           alt="kathir-kreation-logo"
           className="selectDisable reveal-from-bottom"
           data-reveal-delay="200"
           src={textLogo}
         />
-      </div>
+        
+      </motion.div>
     </header>
   );
 };
