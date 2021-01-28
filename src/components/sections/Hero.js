@@ -47,7 +47,6 @@ const Hero = ({
         <p style={{ fontSize: "0.8em", textAlign: "end" }}>
           CLICK AND DRAG ABOVE ^
         </p>
-
         <div className={innerClasses}>
           <div className="hero-content">
             <div className="container">
@@ -88,7 +87,7 @@ const Hero = ({
               scale,
             }}
           >
-            <img src={logo} />
+            <img alt="kathir-kreation-logo" src={logo} />
 
             <motion.div
               className="item"

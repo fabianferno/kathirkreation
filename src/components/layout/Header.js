@@ -149,9 +149,9 @@ const Header = ({
           )}
         </div>
       </div>
-      <div style={{paddingTop:'150px'}} className='container'>
+      <div style={{ paddingTop: "150px" }} className="container">
         <img
-          style={{}}
+          alt="kathir-kreation-logo"
           className="selectDisable reveal-from-bottom"
           data-reveal-delay="200"
           src={textLogo}
