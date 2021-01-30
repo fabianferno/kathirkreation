@@ -3,8 +3,9 @@ import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
-import logo from "../../assets/images/logo.svg";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.css";
+import logo from "../../assets/images/logo.svg";
 
 const propTypes = {
   ...SectionProps.types,
@@ -44,14 +45,12 @@ const Hero = ({
   return (
     <section {...props} className={outerClasses} style={{ paddingTop: "0px" }}>
       <div className="container">
-        <p style={{ fontSize: "0.8em", textAlign: "end" }}>
-          Click & Drag ^
-        </p>
+        <p style={{ fontSize: "0.8em", textAlign: "end" }}>Click & Drag ^</p>
         <div className={innerClasses}>
-          <div className="hero-content">
+          <div className="hero-content pb-5">
             <div className="container">
               <p
-                style={{ textAlign: "left" }}
+                style={{ textAlign: "center" }}
                 className="m-0 mb-32 reveal-from-bottom "
                 data-reveal-delay="400"
               >
@@ -82,13 +81,15 @@ const Hero = ({
           </div>
 
           <motion.div
-            className="container"
             style={{
               scale,
             }}
           >
-            <img alt="kathir-kreation-logo" src={logo} />
-
+            <img
+              style={{ height: "600px" }}
+              alt="kathir-kreation-logo"
+              src={logo}
+            />
             <motion.div
               className="item"
               style={{

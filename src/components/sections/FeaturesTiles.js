@@ -43,9 +43,9 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "We care for your creativity",
+    title: "Our Lineup of Services",
     paragraph:
-      "We develop what you create...",
+      "We provide all kinds of services to take your ideas to new stunning heights. Be it from designing small logos to post production, we provide guaranteed services without compromise. ",
   };
 
   return (
@@ -55,7 +55,7 @@ const FeaturesTiles = ({
           <SectionHeader
             data={sectionHeader}
             className="center-content"
-            style={{ marginBottom: "200px", marginTop: "100px" }}
+            style={{ marginBottom: "200px" }}
           />
 
           <div className={tilesClasses}>
@@ -73,11 +73,11 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Brand Launching</h4>
-                  <p className="m-0 text-sm">
+                  {/* <p className="m-0 text-sm">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -99,11 +99,161 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Rebranding</h4>
-                  <p className="m-0 text-sm">
+                  {/* <p className="m-0 text-sm">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
-                  </p>
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-03.svg")}
+                      alt="Features tile icon 03"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Brand Positioning</h4>
+                  {/* <p className="m-0 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-04.svg")}
+                      alt="Features tile icon 04"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Visual Identity Design</h4>
+                  {/* <p className="m-0 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-05.svg")}
+                      alt="Features tile icon 05"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Brand Creating</h4>
+                  {/* <p className="m-0 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-06.svg")}
+                      alt="Features tile icon 06"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Communication</h4>
+                  {/* <p className="m-0 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-01.svg")}
+                      alt="Features tile icon 01"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Brand Execution</h4>
+                  {/* <p className="m-0 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-02.svg")}
+                      alt="Features tile icon 02"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Digital Marketing</h4>
+                  {/* <p className="m-0 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -125,11 +275,11 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Web Design</h4>
-                  <p className="m-0 text-sm">
+                  {/* <p className="m-0 text-sm">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -147,12 +297,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Package Design</h4>
-                  <p className="m-0 text-sm">
+                  <h4 className="mt-0 mb-8">Social Design</h4>
+                  {/* <p className="m-0 text-sm">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -173,12 +323,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Photography</h4>
-                  <p className="m-0 text-sm">
+                  <h4 className="mt-0 mb-8">Package Design</h4>
+                  {/* <p className="m-0 text-sm">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -199,12 +349,12 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Brand Positioning</h4>
-                  <p className="m-0 text-sm">
+                  <h4 className="mt-0 mb-8">Photography</h4>
+                  {/* <p className="m-0 text-sm">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

@@ -1,8 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import logo from "../../assets/images/logo.svg";
+import textlogo from "../../assets/images/text-face-logo.svg";
+import "bootstrap/dist/css/bootstrap.css";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -79,7 +82,7 @@ const Header = ({
   );
 
   return (
-    <header {...props} className={classes}>
+    <header style={{ marginTop: "20px" }} {...props} className={classes}>
       <div className="container">
         <div
           className={classNames(
@@ -87,20 +90,14 @@ const Header = ({
             bottomDivider && "has-bottom-divider"
           )}
         >
-          <svg
-            style={{ height: "50px" }}
-            fill="#ffffff"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 124.78 124.14"
-          >
-            <g data-name="Layer 2">
-              <path
-                d="M47.12 124.14V61.67L32.77 76.06 0 76.42l31-31a12.88 12.88 0 002.65.28 12.46 12.46 0 0012.46-12.46 12.88 12.88 0 00-.28-2.65L76.42 0v32.41L61.78 47.05l63 .05-23.45 23.73-30.33.04.15 30.25-24.07 23zM33.65 21.74a11.5 11.5 0 1011.49 11.5 11.5 11.5 0 00-11.49-11.5z"
-                fill-rule="evenodd"
-                data-name="Layer 1"
-              />
-            </g>
-          </svg>
+          <Link to="/" className="col-md-5 col-10">
+            <img
+              src={textlogo}
+              alt="kathirkreationlogo"
+              srcset=""
+              className="img-fluid"
+            />
+          </Link>
           {!hideNav && (
             <>
               <button
@@ -125,7 +122,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#0" onClick={closeMenu}>
+                      <Link to="/about-us" onClick={closeMenu}>
                         About Us
                       </Link>
                     </li>
@@ -149,23 +146,39 @@ const Header = ({
           )}
         </div>
       </div>
-      <motion.div
-        drag
-        dragConstraints={{
-          top: -50,
-          left: -0,
-          right: 0,
-          bottom: 50,
-        }}
-        style={{ padding: "40px", background: "rgba(24, 24, 24, 0.6)"}}
-        className="container"
-      >
-        <div
-          className="selectDisable reveal-from-bottom logotextbg"
-          data-reveal-delay="200"
-        />
-        
-      </motion.div>
+      <div style={{ marginTop: "60px" }} className="container p-4">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: -360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        >
+          <motion.div
+            drag
+            dragConstraints={{
+              top: -50,
+              left: -0,
+              right: 0,
+              bottom: 50,
+            }}
+            className="d-md-flex d-block justify-content-around align-items-center"
+            style={{
+              padding: "40px",
+              background: "rgba(24, 24, 24, 0.6)",
+            }}
+          >
+            <img
+              style={{ height: "150px" }}
+              alt="kathir-kreation-logo"
+              src={logo}
+            />
+            <h1>We care for your creativity</h1>
+          </motion.div>
+        </motion.div>
+      </div>
     </header>
   );
 };

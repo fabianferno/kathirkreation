@@ -5,10 +5,8 @@
 /*--------------------------------------------------------------
 # Variables, functions and mixins
 --------------------------------------------------------------*/
-@import "core/abstracts/functions",
-		"settings/settings",
-        "core/abstracts/mixins",
-        'core/abstracts/include-media';
+@import "core/abstracts/functions", "settings/settings", "core/abstracts/mixins",
+  "core/abstracts/include-media";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -128,19 +126,17 @@
 @import "core/base/helpers";
 
 .selectDisable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
-
 .logotextbg {
-	background-image: url(../images/text-face-logo.svg);
-    background-position: 50% 50%;
-    background-size: contain;
-	background-repeat: no-repeat;
-	height: 20vh;
-	
+  background-image: url(../images/text-face-logo.svg);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10vh;
 }
