@@ -131,11 +131,11 @@ const Header = ({
                     <ul className="list-reset header-nav-right">
                       <li>
                         <Link
-                          to="#0"
+                          to="/reach-us"
                           className="button button-dark button-wide-mobile button-sm"
                           onClick={closeMenu}
                         >
-                          Contact Us
+                          Reach Us
                         </Link>
                       </li>
                     </ul>

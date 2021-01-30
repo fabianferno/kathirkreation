@@ -1,6 +1,6 @@
 import React from "react";
-// import sections
-import FeaturesSplit from "../components/sections/FeaturesSplit";
+import "bootstrap/dist/css/bootstrap.css";
+
 import FluidAnimation from "react-fluid-animation";
 
 const AboutUs = () => {
@@ -18,12 +18,14 @@ const AboutUs = () => {
         }}
         style={{ height: "450px", width: "80vw" }}
       />
-      <FeaturesSplit
-        invertMobile
-        topDivider
-        imageFill
-        className="illustration-section-02"
-      />
+
+      <section className="container">
+        <h1>Reach Us</h1>
+        <p>
+          Make a choice, take a stand for your brand and make the first move!
+          We'd be glad to hear your story!
+        </p>
+      </section>
     </>
   );
 };
