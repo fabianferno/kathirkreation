@@ -275,9 +275,9 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Subhiksha </h3>
                 <p className="m-0">
-                  Subhiksha is a passionate freelance writer and a lifelong
-                  learner with an ongoing curiosity to learn new things. She
-                  helps us create content that drives action.
+                  Subhiksha is a passionate writer and a lifelong learner with
+                  an ongoing curiosity to learn new things. She helps us create
+                  content that drives action.
                 </p>
               </div>
               <div
