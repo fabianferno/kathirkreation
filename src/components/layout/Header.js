@@ -2,8 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { motion } from "framer-motion";
-import logo from "../../assets/images/logo.svg";
+
 import textlogo from "../../assets/images/text-face-logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -158,39 +157,6 @@ const Header = ({
             </>
           )}
         </div>
-      </div>
-      <div className="container p-4">
-        <motion.div
-          initial={{ scale: -0.5 }}
-          animate={{ rotate: 0, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          }}
-        >
-          <motion.div
-            drag
-            dragConstraints={{
-              top: -50,
-              left: -0,
-              right: 0,
-              bottom: 50,
-            }}
-            className="d-md-flex d-block justify-content-around align-items-center"
-            // style={{
-            //   padding: "40px",
-            //   background: "rgba(24, 24, 24, 0.6)",
-            // }}
-          >
-            <img
-              style={{ height: "150px" }}
-              alt="kathir-kreation-logo"
-              src={logo}
-            />
-            <h1>We care for your creativity</h1>
-          </motion.div>
-        </motion.div>
       </div>
     </header>
   );

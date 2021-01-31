@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import FeaturesSplit from "../components/sections/FeaturesSplit";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
+import logo from "../assets/images/logo.svg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const fade = {
@@ -35,6 +36,42 @@ const AboutUs = () => {
           style={{ height: "450px", width: "85vw" }}
           className=" mb-md-0 mb-5 pb-md-0 pb-5"
         />
+        <div
+          style={{ position: "absolute", top: "20vh", left: "0", right: "0" }}
+          className="container p-4"
+        >
+          <motion.div
+            initial={{ scale: -0.5 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
+          >
+            <motion.div
+              drag
+              dragConstraints={{
+                top: -10,
+                left: -0,
+                right: 0,
+                bottom: 10,
+              }}
+              className="d-md-flex d-block justify-content-around align-items-center"
+              style={{
+                padding: "40px",
+                background: "#222222",
+              }}
+            >
+              <img
+                style={{ height: "150px" }}
+                alt="kathir-kreation-logo"
+                src={logo}
+              />
+              <h1>We care for your creativity</h1>
+            </motion.div>
+          </motion.div>
+        </div>
         <FeaturesSplit
           invertMobile
           topDivider

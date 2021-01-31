@@ -1,7 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-// import Marquee from "react-marquee-slider";
 import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
+import blackdots from "../../assets/images/associate-clients/blackdots.jpg";
+import bfe from "../../assets/images/associate-clients/bfe.jpg";
+import geonxtresources from "../../assets/images/associate-clients/geonxtresources.jpg";
+import luxe from "../../assets/images/associate-clients/luxe-cinemas.jpg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const fade = {
@@ -19,44 +23,48 @@ const fade = {
 
 const WorkSamples = () => {
   return (
-    <>
-      <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
-        <motion.div variants={fade}>
-          <section className="d-flex">
-            <div className="card p-5" style={{ width: "18rem" }}>
-              <img className="card-img-top" src="..." alt="Card cap" />
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+    <section className="pt-5">
+      <h1 className="textgradient bigger text-center">Our Associate Clients</h1>
+      <Marquee pauseOnHover speed={50} gradient gradientColor={[21, 23, 25]}>
+        <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+          <motion.div variants={fade}>
+            <section className="d-flex">
+              <div className="card m-5" style={{ width: "18rem" }}>
+                <div className="card-body  d-flex align-items-center">
+                  <img className="card-img-top" src={bfe} alt="Card cap" />
+                </div>
               </div>
-            </div>
-            <div className="card p-5" style={{ width: "18rem" }}>
-              <img className="card-img-top" src="..." alt="Card cap" />
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+
+              <div className="card m-5" style={{ width: "18rem" }}>
+                <div className="card-body  d-flex align-items-center">
+                  <img className="card-img-top" src={luxe} alt="Card cap" />
+                </div>
               </div>
-            </div>
-            <div className="card p-5" style={{ width: "18rem" }}>
-              <img className="card-img-top" src="..." alt="Card cap" />
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+
+              <div className="card m-5" style={{ width: "18rem" }}>
+                <div className="card-body d-flex align-items-center">
+                  <img
+                    className="card-img-top"
+                    src={geonxtresources}
+                    alt="Card cap"
+                  />
+                </div>
               </div>
-            </div>
-          </section>
-          {/* <Marquee velocity={25} scatterRandomly minScale={0.7}>
-            
-          </Marquee> */}
+
+              <div className="card m-5" style={{ width: "18rem" }}>
+                <div className="card-body  d-flex align-items-center">
+                  <img
+                    className="card-img-top"
+                    src={blackdots}
+                    alt="Card cap"
+                  />
+                </div>
+              </div>
+            </section>
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </>
+      </Marquee>
+    </section>
   );
 };
 

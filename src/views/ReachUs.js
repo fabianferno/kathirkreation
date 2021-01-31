@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
+import logo from "../assets/images/logo.svg";
 
 import FluidAnimation from "react-fluid-animation";
 
@@ -32,10 +33,45 @@ const AboutUs = () => {
             curl: 30,
             splatRadius: 0.015,
           }}
-          style={{ height: "450px", width: "85vw" }}
+          style={{ height: "400px", width: "85vw" }}
           className=" mb-md-0 mb-5 pb-md-0 pb-5"
         />
-
+        <div
+          style={{ position: "absolute", top: "20vh", left: "0", right: "0" }}
+          className="container p-4"
+        >
+          <motion.div
+            initial={{ scale: -0.5 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
+          >
+            <motion.div
+              drag
+              dragConstraints={{
+                top: -10,
+                left: -0,
+                right: 0,
+                bottom: 10,
+              }}
+              className="d-md-flex d-block justify-content-around align-items-center"
+              style={{
+                padding: "40px",
+                background: "#222222",
+              }}
+            >
+              <img
+                style={{ height: "150px" }}
+                alt="kathir-kreation-logo"
+                src={logo}
+              />
+              <h1>We care for your creativity</h1>
+            </motion.div>
+          </motion.div>
+        </div>
         <section className="container section center-content pt-md-0 pt-5">
           <h1 className="textgradient bigger">Reach Us</h1>
           <p>
