@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/sections/Hero";
-import WorkSamples from "../components/sections/WorkSamples";
+import Associates from "../components/sections/Associates";
 import FeaturesTiles from "../components/sections/FeaturesTiles";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
@@ -75,7 +75,7 @@ const Home = () => {
           </div>
           <Hero className="illustration-section-01" />
           <FeaturesTiles />
-          <WorkSamples />
+          <Associates />
         </motion.div>
       </motion.div>
     </>

@@ -21,27 +21,39 @@ const fade = {
   },
 };
 
-const WorkSamples = () => {
+const Associates = () => {
   return (
     <section className="pt-5">
       <h1 className="textgradient bigger text-center">Our Associate Clients</h1>
-      <Marquee pauseOnHover speed={50} gradient gradientColor={[21, 23, 25]}>
+      <Marquee speed={60} gradient gradientColor={[21, 23, 25]}>
         <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
           <motion.div variants={fade}>
             <section className="d-flex">
-              <div className="card m-5" style={{ width: "18rem" }}>
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                className="card m-5"
+                style={{ width: "18rem" }}
+              >
                 <div className="card-body  d-flex align-items-center">
                   <img className="card-img-top" src={bfe} alt="Card cap" />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card m-5" style={{ width: "18rem" }}>
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                className="card m-5"
+                style={{ width: "18rem" }}
+              >
                 <div className="card-body  d-flex align-items-center">
                   <img className="card-img-top" src={luxe} alt="Card cap" />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card m-5" style={{ width: "18rem" }}>
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                className="card m-5"
+                style={{ width: "18rem" }}
+              >
                 <div className="card-body d-flex align-items-center">
                   <img
                     className="card-img-top"
@@ -49,9 +61,13 @@ const WorkSamples = () => {
                     alt="Card cap"
                   />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="card m-5" style={{ width: "18rem" }}>
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                className="card m-5"
+                style={{ width: "18rem" }}
+              >
                 <div className="card-body  d-flex align-items-center">
                   <img
                     className="card-img-top"
@@ -59,7 +75,7 @@ const WorkSamples = () => {
                     alt="Card cap"
                   />
                 </div>
-              </div>
+              </motion.div>
             </section>
           </motion.div>
         </motion.div>
@@ -68,4 +84,4 @@ const WorkSamples = () => {
   );
 };
 
-export default WorkSamples;
+export default Associates;
