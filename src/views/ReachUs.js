@@ -68,16 +68,17 @@ const AboutUs = () => {
                 alt="kathir-kreation-logo"
                 src={logo}
               />
-              <h1>We care for your creativity</h1>
             </motion.div>
           </motion.div>
         </div>
-        <section className="container section center-content pt-md-0 pt-5">
-          <h1 className="textgradient bigger">Reach Us</h1>
-          <p>
-            Make a choice, take a stand for your brand and make the first move!
-            We'd be glad to hear your story!
-          </p>
+        <section className="container">
+          <div className="center-content">
+            <h1 className="textgradient bigger">Reach Us</h1>
+            <p>
+              Make a choice, take a stand for your brand and make the first
+              move! We'd be glad to hear your story!
+            </p>
+          </div>
         </section>
       </motion.div>
     </motion.div>

@@ -34,7 +34,6 @@ const AboutUs = () => {
             splatRadius: 0.015,
           }}
           style={{ height: "450px", width: "85vw" }}
-          className=" mb-md-0 mb-5 pb-md-0 pb-5"
         />
         <div
           style={{ position: "absolute", top: "20vh", left: "0", right: "0" }}
@@ -68,7 +67,7 @@ const AboutUs = () => {
                 alt="kathir-kreation-logo"
                 src={logo}
               />
-              <h1>We care for your creativity</h1>
+              <h1>Kathir Kreation</h1>
             </motion.div>
           </motion.div>
         </div>
