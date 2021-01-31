@@ -122,6 +122,18 @@ const Header = ({
                     )}
                   >
                     <li>
+                      <Link to="/" onClick={closeMenu}>
+                        Home
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul
+                    className={classNames(
+                      "list-reset text-xs",
+                      navPosition && `header-nav-${navPosition}`
+                    )}
+                  >
+                    <li>
                       <Link to="/about-us" onClick={closeMenu}>
                         About Us
                       </Link>
