@@ -166,10 +166,10 @@ const Header = ({
               bottom: 50,
             }}
             className="d-md-flex d-block justify-content-around align-items-center"
-            style={{
-              padding: "40px",
-              background: "rgba(24, 24, 24, 0.6)",
-            }}
+            // style={{
+            //   padding: "40px",
+            //   background: "rgba(24, 24, 24, 0.6)",
+            // }}
           >
             <img
               style={{ height: "150px" }}
