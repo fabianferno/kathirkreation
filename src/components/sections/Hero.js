@@ -45,7 +45,7 @@ const Hero = ({
   return (
     <section {...props} className={outerClasses} style={{ paddingTop: "0px" }}>
       <div className="container">
-        <p style={{ fontSize: "0.8em", textAlign: "end" }}>Click & Drag ^</p>
+        <p style={{ fontSize: "0.8em", textAlign: "end" }}>Drag & Explore ^</p>
         <div className={innerClasses}>
           <div className="hero-content pb-5">
             <div className="container">
