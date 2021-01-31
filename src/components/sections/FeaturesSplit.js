@@ -107,14 +107,16 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Graphic Designer
+                  CFO
                 </div>
-                <h3 className="mt-0 mb-12">Nandhini </h3>
+                <h3 className="mt-0 mb-12">Vivekananda </h3>
                 <p className="m-0">
-                  Nandhini holds a C Tech with focus on Graphic Design
-                  Communication with extensive experience in Graphic Designing
-                  and branding strategies after having worked in several
-                  corporates. She is a composed person and a versatile worker.
+                  Vivekananda is one of the finest operational marketers with a
+                  wide range of experience in product selling, exhibition
+                  management, sales and marketing. He is an established leader
+                  with great managerial skills including the identification of
+                  new sales and marketing outlets, financial oversight and
+                  strategic planning.
                 </p>
               </div>
               <div
@@ -125,8 +127,8 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
                 style={{ opacity: "20%" }}
               >
-                <img
-                  src="https://media1.giphy.com/media/lp1ERA7r0WaUYVC5Vf/giphy.gif"
+                <Image
+                  src="https://media1.giphy.com/media/KfqcIKKMwp5K8s0R8h/giphy.gif"
                   alt="Features split 02"
                   className="img-fluid"
                 />
@@ -172,72 +174,6 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Digital Marketer
-                </div>
-                <h3 className="mt-0 mb-12">Pradheep </h3>
-                <p className="m-0">
-                  Pradheep is a digital marketer who helps increase their brand
-                  recognition through strategic guidance on virtual presence. He
-                  transforms the most elegant website into a complicated one and
-                  fragments all the sections in a well aligned manner.
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-                style={{ opacity: "20%" }}
-              >
-                <Image
-                  src="https://media4.giphy.com/media/mCy3MZ0WaZG2McvtST/giphy.gif?cid=ecf05e472fgk5r4501j0zqdvml96tibi6jvi1t39626d491a&rid=giphy.gif"
-                  alt="Features split 01"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-right"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  CFO
-                </div>
-                <h3 className="mt-0 mb-12">Vivekananda </h3>
-                <p className="m-0">
-                  Vivekananda is one of the finest operational marketers with a
-                  wide range of experience in product selling, exhibition
-                  management, sales and marketing. He is an established leader
-                  with great managerial skills including the identification of
-                  new sales and marketing outlets, financial oversight and
-                  strategic planning.
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-                style={{ opacity: "20%" }}
-              >
-                <Image
-                  src="https://media1.giphy.com/media/KfqcIKKMwp5K8s0R8h/giphy.gif"
-                  alt="Features split 02"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-left"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Web Developer
                 </div>
                 <h3 className="mt-0 mb-12">Fabian Ferno</h3>
@@ -260,6 +196,70 @@ const FeaturesSplit = ({
                 <Image
                   src="https://media3.giphy.com/media/l1J4Wpj0ugWAyKj2z4/giphy.gif"
                   alt="Features split 03"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Graphic Designer
+                </div>
+                <h3 className="mt-0 mb-12">Nandhini </h3>
+                <p className="m-0">
+                  Nandhini holds a C Tech with focus on Graphic Design
+                  Communication with extensive experience in Graphic Designing
+                  and branding strategies after having worked in several
+                  corporates. She is a composed person and a versatile worker.
+                </p>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
+              >
+                <img
+                  src="https://media1.giphy.com/media/lp1ERA7r0WaUYVC5Vf/giphy.gif"
+                  alt="Features split 02"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-left"
+                data-reveal-container=".split-item"
+              >
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Digital Marketer
+                </div>
+                <h3 className="mt-0 mb-12">Pradheep </h3>
+                <p className="m-0">
+                  Pradheep is a digital marketer who helps increase their brand
+                  recognition through strategic guidance on virtual presence. He
+                  transforms the most elegant website into a complicated one and
+                  fragments all the sections in a well aligned manner.
+                </p>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
+              >
+                <Image
+                  src="https://media4.giphy.com/media/mCy3MZ0WaZG2McvtST/giphy.gif?cid=ecf05e472fgk5r4501j0zqdvml96tibi6jvi1t39626d491a&rid=giphy.gif"
+                  alt="Features split 01"
                   className="img-fluid"
                 />
               </div>
