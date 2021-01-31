@@ -72,9 +72,9 @@ const FeaturesSplit = ({
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   CEO
                 </div>
-                <h3 className="mt-0 mb-12">Gowtham Kathiresan</h3>
+                <h3 className="mt-0 mb-12">Kathiresan</h3>
                 <p className="m-0">
-                  Our boss Kathiresan, is an ingenious professional with over 5
+                  Our Lead Kathiresan, is an ingenious professional with over 5
                   years of ample experience in Marketing Communications. He has
                   the potentiality to translate marketing ideas and design
                   concepts across all organizational levels. With extensive
