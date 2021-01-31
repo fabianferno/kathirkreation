@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../components/sections/Hero";
+import WorkSamples from "../components/sections/WorkSamples";
 import FeaturesTiles from "../components/sections/FeaturesTiles";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
@@ -35,10 +36,9 @@ const Home = () => {
             }}
             style={{ height: "700px", width: "100vw" }}
           />
-
           <Hero className="illustration-section-01" />
-
           <FeaturesTiles />
+          <WorkSamples />
         </motion.div>
       </motion.div>
     </>
