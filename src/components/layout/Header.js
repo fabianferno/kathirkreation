@@ -134,6 +134,7 @@ const Header = ({
                           to="/reach-us"
                           className="button button-dark button-wide-mobile button-sm"
                           onClick={closeMenu}
+                          style={{ color: "#F1AC25" }}
                         >
                           Reach Us
                         </Link>
@@ -146,10 +147,10 @@ const Header = ({
           )}
         </div>
       </div>
-      <div style={{ marginTop: "60px" }} className="container p-4">
+      <div className="container p-4">
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ rotate: -360, scale: 1 }}
+          initial={{ scale: -0.5 }}
+          animate={{ rotate: 0, scale: 1 }}
           transition={{
             type: "spring",
             stiffness: 260,

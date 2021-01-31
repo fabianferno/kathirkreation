@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
-import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
 
 const propTypes = {
@@ -48,17 +47,22 @@ const FeaturesSplit = ({
     alignTop && "align-top"
   );
 
-  const sectionHeader = {
-    title: "What sets us apart?",
-    paragraph:
-      "We know how to convey a sense of commercializing and branding as we envision brand strategies and our brand services are delivered straight to your table ! We give life to your business and voice your ideas to create results that last a lifetime! So flaunt your firm with Kathir Collections!",
-  };
-
   return (
     <section {...props} className={outerClasses}>
-      <div className="container">
+      <div className="container section ">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <div className="container pb-5">
+            <h1 className="center-content textgradient bigger">
+              What sets us apart?
+            </h1>
+            <p className="text-center">
+              We know how to convey a sense of commercializing and branding as
+              we envision brand strategies and our brand services are delivered
+              straight to your table ! We give life to your business and voice
+              your ideas to create results that last a lifetime! So flaunt your
+              firm with Kathir Collections!
+            </p>
+          </div>
           <div className={splitClasses}>
             <div className="split-item">
               <div
@@ -86,13 +90,13 @@ const FeaturesSplit = ({
                   "split-item-image center-content-mobile reveal-from-bottom",
                   imageFill && "split-item-image-fill"
                 )}
+                style={{ opacity: "20%" }}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src="https://media1.giphy.com/media/lp1ERA7r0WaUYVC5Vf/giphy.gif"
-                  alt="Features split 01"
-                  width={528}
-                  height={396}
+                <img
+                  src="https://media4.giphy.com/media/ibXW0RPKgrtHgxg8gV/giphy.gif?cid=ecf05e47pu2mqq4282jai6kc02yzrxhffxifk6qse0gxs56o&rid=giphy.gif"
+                  alt="Black Marble"
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -119,12 +123,12 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
               >
-                <Image
-                  src="https://media1.giphy.com/media/hombQ1IA8KPXRqrYHn/giphy.gif"
+                <img
+                  src="https://media1.giphy.com/media/lp1ERA7r0WaUYVC5Vf/giphy.gif"
                   alt="Features split 02"
-                  width={528}
-                  height={396}
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -152,12 +156,12 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
               >
                 <Image
                   src="https://media3.giphy.com/media/Oj4dgTX3LhtkmgsBqc/giphy.gif"
                   alt="Features split 03"
-                  width={528}
-                  height={396}
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -184,12 +188,12 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
               >
                 <Image
-                  src="https://media2.giphy.com/media/VbyRe0O0tUTRfg8jYr/giphy.gif"
+                  src="https://media4.giphy.com/media/mCy3MZ0WaZG2McvtST/giphy.gif?cid=ecf05e472fgk5r4501j0zqdvml96tibi6jvi1t39626d491a&rid=giphy.gif"
                   alt="Features split 01"
-                  width={528}
-                  height={396}
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -218,12 +222,12 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
               >
                 <Image
                   src="https://media1.giphy.com/media/KfqcIKKMwp5K8s0R8h/giphy.gif"
                   alt="Features split 02"
-                  width={528}
-                  height={396}
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -251,12 +255,12 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
               >
                 <Image
                   src="https://media3.giphy.com/media/l1J4Wpj0ugWAyKj2z4/giphy.gif"
                   alt="Features split 03"
-                  width={528}
-                  height={396}
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -282,12 +286,12 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                style={{ opacity: "20%" }}
               >
                 <Image
                   src="https://media1.giphy.com/media/SXUDBa1UtgAaAR8fVb/giphy.gif"
                   alt="Features split 02"
-                  width={528}
-                  height={396}
+                  className="img-fluid"
                 />
               </div>
             </div>
