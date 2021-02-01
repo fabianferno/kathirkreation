@@ -2,7 +2,6 @@ import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
-import Button from "../elements/Button";
 import "bootstrap/dist/css/bootstrap.css";
 
 const propTypes = {
@@ -68,14 +67,14 @@ const Hero = ({
                   <a
                     className="btn bg-dark text-white mx-2"
                     wideMobile
-                    href="#"
+                    href="https://kathirkreation.com"
                   >
                     Get started
                   </a>
                   <a
                     className="btn bg-warning text-dark font-weight-bold mx-2"
                     wideMobile
-                    href="#"
+                    href="https://kathirkreation.com"
                   >
                     Follow Us
                   </a>

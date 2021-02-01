@@ -4,7 +4,6 @@ import Associates from "../components/sections/Associates";
 import FeaturesTiles from "../components/sections/FeaturesTiles";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
-import logo from "../assets/images/logo.svg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const fade = {

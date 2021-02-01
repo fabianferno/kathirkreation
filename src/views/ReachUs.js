@@ -82,6 +82,7 @@ const AboutUs = () => {
           <div className="mapouter d-flex justify-content-center">
             <div className="gmap_canvas ">
               <iframe
+                title="Maps"
                 width={1000}
                 height={500}
                 id="gmap_canvas"
