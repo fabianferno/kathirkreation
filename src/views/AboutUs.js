@@ -33,7 +33,7 @@ const AboutUs = () => {
             curl: 30,
             splatRadius: 0.015,
           }}
-          style={{ height: "450px", width: "85vw" }}
+          style={{ height: "30vh", width: "90vw" }}
         />
         <div
           style={{ position: "absolute", top: "20vh", left: "0", right: "0" }}
@@ -67,16 +67,11 @@ const AboutUs = () => {
                 alt="kathir-kreation-logo"
                 src={logo}
               />
-              <h1>Kathir Kreation</h1>
+              <h1 className="text-white">Kathir Kreation</h1>
             </motion.div>
           </motion.div>
         </div>
-        <FeaturesSplit
-          invertMobile
-          topDivider
-          imageFill
-          className="illustration-section-02"
-        />
+        <FeaturesSplit invertMobile topDivider imageFill className="" />
       </motion.div>
     </motion.div>
   );

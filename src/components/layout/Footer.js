@@ -33,7 +33,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
           <div className="footer-top space-between text-xxs">
             <svg
               style={{ height: "50px" }}
-              fill="#ffffff"
+              fill="#222222"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 124.78 124.14"
             >

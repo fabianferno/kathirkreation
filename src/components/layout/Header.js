@@ -121,7 +121,11 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="/" onClick={closeMenu}>
+                      <Link
+                        to="/"
+                        style={{ color: "#ffffff" }}
+                        onClick={closeMenu}
+                      >
                         Home
                       </Link>
                     </li>
@@ -133,7 +137,11 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="/about-us" onClick={closeMenu}>
+                      <Link
+                        style={{ color: "#ffffff" }}
+                        to="/about-us"
+                        onClick={closeMenu}
+                      >
                         About Us
                       </Link>
                     </li>
@@ -143,9 +151,12 @@ const Header = ({
                       <li>
                         <Link
                           to="/reach-us"
-                          className="button button-dark button-wide-mobile button-sm"
+                          className="button button-dark button-wide-mobile button-sm "
                           onClick={closeMenu}
-                          style={{ color: "#F1AC25" }}
+                          style={{
+                            color: "#000000",
+                            backgroundColor: "#F1AC25",
+                          }}
                         >
                           Reach Us
                         </Link>

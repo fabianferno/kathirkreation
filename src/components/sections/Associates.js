@@ -24,7 +24,7 @@ const Associates = () => {
   return (
     <section className="pt-5">
       <h1 className="textgradient bigger text-center">Associate Partners</h1>
-      <Marquee speed={60} gradient gradientColor={[21, 23, 25]}>
+      <Marquee speed={60} gradient gradientColor={[238, 238, 237]}>
         <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
           <motion.div variants={fade}>
             <section className="d-flex">

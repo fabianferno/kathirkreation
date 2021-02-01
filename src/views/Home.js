@@ -35,7 +35,7 @@ const Home = () => {
               curl: 30,
               splatRadius: 0.015,
             }}
-            style={{ height: "700px", width: "100vw" }}
+            style={{ height: "100vh", width: "100vw" }}
           />
           <div
             style={{ position: "absolute", top: "30vh", left: "0", right: "0" }}
@@ -69,7 +69,7 @@ const Home = () => {
                   alt="kathir-kreation-logo"
                   src={logo}
                 />
-                <h1>We care for your creativity</h1>
+                <h1 className="text-white">We care for your creativity</h1>
               </motion.div>
             </motion.div>
           </div>

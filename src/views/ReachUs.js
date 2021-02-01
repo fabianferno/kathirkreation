@@ -33,7 +33,7 @@ const AboutUs = () => {
             curl: 30,
             splatRadius: 0.015,
           }}
-          style={{ height: "400px", width: "85vw" }}
+          style={{ height: "50vh", width: "100vw" }}
           className=" mb-md-0 mb-5 pb-md-0 pb-5"
         />
         <div

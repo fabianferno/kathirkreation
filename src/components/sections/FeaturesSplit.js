@@ -15,7 +15,6 @@ const FeaturesSplit = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
-  topDivider,
   bottomDivider,
   hasBgColor,
   invertColor,
@@ -36,7 +35,6 @@ const FeaturesSplit = ({
 
   const innerClasses = classNames(
     "features-split-inner section-inner",
-    topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
 
@@ -90,7 +88,7 @@ const FeaturesSplit = ({
                   "split-item-image center-content-mobile reveal-from-bottom",
                   imageFill && "split-item-image-fill"
                 )}
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
                 data-reveal-container=".split-item"
               >
                 <img
@@ -125,7 +123,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
               >
                 <Image
                   src="https://media1.giphy.com/media/KfqcIKKMwp5K8s0R8h/giphy.gif"
@@ -158,7 +156,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
               >
                 <Image
                   src="https://media3.giphy.com/media/Oj4dgTX3LhtkmgsBqc/giphy.gif"
@@ -191,7 +189,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
               >
                 <Image
                   src="https://media3.giphy.com/media/l1J4Wpj0ugWAyKj2z4/giphy.gif"
@@ -223,7 +221,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
               >
                 <img
                   src="https://media1.giphy.com/media/lp1ERA7r0WaUYVC5Vf/giphy.gif"
@@ -255,7 +253,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
               >
                 <Image
                   src="https://media4.giphy.com/media/mCy3MZ0WaZG2McvtST/giphy.gif?cid=ecf05e472fgk5r4501j0zqdvml96tibi6jvi1t39626d491a&rid=giphy.gif"
@@ -286,7 +284,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-                style={{ opacity: "70%" }}
+                style={{ opacity: "80%" }}
               >
                 <Image
                   src="https://media1.giphy.com/media/SXUDBa1UtgAaAR8fVb/giphy.gif"

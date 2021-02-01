@@ -142,14 +142,20 @@
 }
 
 .textgradient {
-  background: -webkit-linear-gradient(
-    40deg,
-    rgb(241, 172, 37),
-    rgb(251, 106, 11)
-  );
+  background: -webkit-linear-gradient(40deg, rgb(49, 49, 49), rgb(15, 15, 15));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+// .textgradient {
+//   background: -webkit-linear-gradient(
+//     40deg,
+//     rgb(241, 172, 37),
+//     rgb(251, 106, 11)
+//   );
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
 
 .bigger {
   font-size: 2.7rem;
