@@ -65,12 +65,20 @@ const Hero = ({
                 data-reveal-delay="600"
               >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#">
+                  <a
+                    className="btn bg-dark text-white mx-2"
+                    wideMobile
+                    href="#"
+                  >
                     Get started
-                  </Button>
-                  <Button tag="a" color="dark" wideMobile href="#">
+                  </a>
+                  <a
+                    className="btn bg-warning text-dark font-weight-bold mx-2"
+                    wideMobile
+                    href="#"
+                  >
                     Follow Us
-                  </Button>
+                  </a>
                 </ButtonGroup>
               </div>
             </div>
