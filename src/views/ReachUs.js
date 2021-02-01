@@ -79,6 +79,33 @@ const AboutUs = () => {
               move! We'd be glad to hear your story!
             </p>
           </div>
+          <div className="mapouter d-flex justify-content-center">
+            <div className="gmap_canvas ">
+              <iframe
+                width={1000}
+                height={500}
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Kumaran%20Colony&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameBorder={0}
+                scrolling="no"
+                marginHeight={0}
+                marginWidth={0}
+              />
+
+              <style
+                dangerouslySetInnerHTML={{
+                  __html:
+                    ".mapouter{position:relative;text-align:right;height:500px;width:1000px;}",
+                }}
+              />
+              <style
+                dangerouslySetInnerHTML={{
+                  __html:
+                    ".gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}",
+                }}
+              />
+            </div>
+          </div>
         </section>
       </motion.div>
     </motion.div>

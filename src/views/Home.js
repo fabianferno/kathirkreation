@@ -67,7 +67,7 @@ const Home = () => {
                 <img
                   style={{ height: "150px" }}
                   alt="kathir-kreation-logo"
-                  src={logo}
+                  src="https://media2.giphy.com/media/U3JUglziycDHMhyNou/giphy.gif"
                 />
                 <h1 className="text-white">We care for your creativity</h1>
               </motion.div>

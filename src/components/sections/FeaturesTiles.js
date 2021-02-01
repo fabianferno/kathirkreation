@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
-import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
 import services from "../../assets/images/services-undraw.svg";
 
@@ -43,12 +42,6 @@ const FeaturesTiles = ({
     pushLeft && "push-left"
   );
 
-  const sectionHeader = {
-    title: "Our Lineup of Services",
-    paragraph:
-      "We provide all kinds of services to take your ideas to new stunning heights. Be it from designing small logos to post production, we provide guaranteed services without compromise. ",
-  };
-
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
@@ -56,15 +49,24 @@ const FeaturesTiles = ({
           style={{
             height: "30vh",
             width: "100vw",
-            marginBottom: "30px",
+            marginTop: "10vh",
+            marginBottom: "20vh",
           }}
           src={services}
           alt="undraw"
           srcset=""
         />
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
-
+          <div className="container pb-5">
+            <h1 className="center-content textgradient bigger">
+              Our Lineup of Services
+            </h1>
+            <p className="text-center">
+              We provide all kinds of services to take your ideas to new
+              stunning heights. Be it from designing small logos to post
+              production, we provide guaranteed services without compromise.
+            </p>
+          </div>
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
