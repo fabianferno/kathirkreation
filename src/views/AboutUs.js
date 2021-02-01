@@ -71,6 +71,7 @@ const AboutUs = () => {
             </motion.div>
           </motion.div>
         </div>
+        <div className="d-md-none d-block" style={{ padding: "13vh" }} />
         <FeaturesSplit invertMobile topDivider imageFill className="" />
       </motion.div>
     </motion.div>
