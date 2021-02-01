@@ -33,7 +33,7 @@ const AboutUs = () => {
             curl: 30,
             splatRadius: 0.015,
           }}
-          style={{ height: "30vh", width: "90vw" }}
+          style={{ height: "30vh", width: "100vw" }}
         />
         <div
           style={{ position: "absolute", top: "20vh", left: "0", right: "0" }}
