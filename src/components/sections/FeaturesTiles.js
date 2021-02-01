@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import services from "../../assets/images/services-undraw.svg";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -51,6 +52,16 @@ const FeaturesTiles = ({
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
+        <img
+          style={{
+            height: "30vh",
+            width: "100vw",
+            marginBottom: "30px",
+          }}
+          src={services}
+          alt="undraw"
+          srcset=""
+        />
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
 
