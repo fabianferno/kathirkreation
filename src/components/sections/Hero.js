@@ -3,9 +3,7 @@ import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.css";
-import logo from "../../assets/images/logo.svg";
 
 const propTypes = {
   ...SectionProps.types,
@@ -40,8 +38,6 @@ const Hero = ({
     bottomDivider && "has-bottom-divider"
   );
 
-  const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
   return (
     <section {...props} className={outerClasses} style={{ paddingTop: "0px" }}>
       <div className="container">
@@ -79,24 +75,6 @@ const Hero = ({
               </div>
             </div>
           </div>
-
-          <motion.div
-            style={{
-              scale,
-            }}
-          >
-            <img
-              style={{ height: "600px" }}
-              alt="kathir-kreation-logo"
-              src={logo}
-            />
-            <motion.div
-              className="item"
-              style={{
-                scaleY: scrollYProgress,
-              }}
-            />
-          </motion.div>
         </div>
       </div>
     </section>

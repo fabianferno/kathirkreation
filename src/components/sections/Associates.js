@@ -2,9 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
-import blackdots from "../../assets/images/associate-clients/blackdots.jpg";
-import bfe from "../../assets/images/associate-clients/bfe.jpg";
-import geonxtresources from "../../assets/images/associate-clients/geonxtresources.jpg";
+import masterchannel from "../../assets/images/associate-clients/masterchannel.png";
+import midasstouch from "../../assets/images/associate-clients/midasstouch.png";
 import luxe from "../../assets/images/associate-clients/luxe-cinemas.jpg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
@@ -24,7 +23,7 @@ const fade = {
 const Associates = () => {
   return (
     <section className="pt-5">
-      <h1 className="textgradient bigger text-center">Our Associate Clients</h1>
+      <h1 className="textgradient bigger text-center">Associate Partners</h1>
       <Marquee speed={60} gradient gradientColor={[21, 23, 25]}>
         <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
           <motion.div variants={fade}>
@@ -32,17 +31,21 @@ const Associates = () => {
               <motion.div
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 className="card m-5"
-                style={{ width: "18rem" }}
+                style={{ width: "10rem" }}
               >
                 <div className="card-body  d-flex align-items-center">
-                  <img className="card-img-top" src={bfe} alt="Card cap" />
+                  <img
+                    className="card-img-top"
+                    src={masterchannel}
+                    alt="Card cap"
+                  />
                 </div>
               </motion.div>
 
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className="card m-5"
-                style={{ width: "18rem" }}
+                style={{ width: "10rem" }}
               >
                 <div className="card-body  d-flex align-items-center">
                   <img className="card-img-top" src={luxe} alt="Card cap" />
@@ -52,26 +55,12 @@ const Associates = () => {
               <motion.div
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 className="card m-5"
-                style={{ width: "18rem" }}
+                style={{ width: "10rem" }}
               >
                 <div className="card-body d-flex align-items-center">
                   <img
                     className="card-img-top"
-                    src={geonxtresources}
-                    alt="Card cap"
-                  />
-                </div>
-              </motion.div>
-
-              <motion.div
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="card m-5"
-                style={{ width: "18rem" }}
-              >
-                <div className="card-body  d-flex align-items-center">
-                  <img
-                    className="card-img-top"
-                    src={blackdots}
+                    src={midasstouch}
                     alt="Card cap"
                   />
                 </div>
