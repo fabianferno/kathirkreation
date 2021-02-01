@@ -50,9 +50,6 @@ const FeaturesSplit = ({
       <div className="container section ">
         <div className={innerClasses}>
           <div className="container pb-5">
-            <h1 className="center-content textgradient bigger">
-              What sets us apart?
-            </h1>
             <p className="text-center">
               We know how to convey a sense of commercializing and branding as
               we envision brand strategies and our brand services are delivered

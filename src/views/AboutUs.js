@@ -67,7 +67,7 @@ const AboutUs = () => {
                 alt="kathir-kreation-logo"
                 src={logo}
               />
-              <h1 className="text-white">Kathir Kreation</h1>
+              <h1 className="text-white">What sets us apart?</h1>
             </motion.div>
           </motion.div>
         </div>
