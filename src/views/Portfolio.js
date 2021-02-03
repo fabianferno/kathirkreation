@@ -2,9 +2,35 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
-import masterchannel from "../../assets/images/portfolio/bfe.jpg";
-import midasstouch from "../../assets/images/portfolio/blackdots.jpg";
-import luxe from "../../assets/images/portfolio/geonxtresources.jpg";
+import FluidAnimation from "react-fluid-animation";
+
+// import client images
+import bfe from "../assets/images/clients/bfe.jpg";
+import blackdots from "../assets/images/clients/blackdots.jpg";
+import geonxtresources from "../assets/images/clients/geonxtresources.jpg";
+import eventplanners from "../assets/images/clients/event-planners.jpg";
+import intuition from "../assets/images/clients/intuition.png";
+import madraschat from "../assets/images/clients/madras-chat.jpg";
+import roche from "../assets/images/clients/roche.jpg";
+import shabir from "../assets/images/clients/shabir.png";
+import shoestudio from "../assets/images/clients/shabir.png";
+import vikashini from "../assets/images/clients/vikashini.jpg";
+
+// import poster images
+import blackdotsposter from "../assets/images/posters/black-dots-poster.jpg";
+import retouch from "../assets/images/posters/retouch.jpg";
+import rotoract from "../assets/images/posters/rotoract-poster.jpg";
+import shoestudioposter from "../assets/images/posters/shoe-studio-poster.jpg";
+import singainaadu from "../assets/images/posters/singai-naadu.jpg";
+import sting from "../assets/images/posters/sting-poster.jpg";
+import tapestry from "../assets/images/posters/tapestry.jpg";
+
+// import work images
+import emceebrit from "../assets/images/works/emcee-britt.jpg";
+import hotelnamma from "../assets/images/works/hotel-namma-nachi.jpg";
+import miraclemedia from "../assets/images/works/miracle-media.jpg";
+import mummymasala from "../assets/images/works/mummy-masala.jpg";
+import stoifist from "../assets/images/works/stoifist.jpg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const fade = {
@@ -19,6 +45,20 @@ const fade = {
     },
   },
 };
+
+function MotionCard(props) {
+  return (
+    <motion.div
+      whileHover={{ scale: 1.1, rotate: -5 }}
+      className="card m-5"
+      style={{ width: "10rem" }}
+    >
+      <div className="card-body  d-flex align-items-center">
+        <img className="card-img-top" src={props.src} alt="Card cap" />
+      </div>
+    </motion.div>
+  );
+}
 
 const Portfolio = () => {
   return (
@@ -40,7 +80,7 @@ const Portfolio = () => {
         className="container p-4"
       >
         <motion.div
-          initial={{ scale: -0.5 }}
+          initial={{ scale: -0.8 }}
           animate={{ rotate: 0, scale: 1 }}
           transition={{
             type: "spring",
@@ -56,7 +96,7 @@ const Portfolio = () => {
               right: 0,
               bottom: 10,
             }}
-            className="d-md-flex d-block justify-content-around align-items-center"
+            className="d-md-flex d-block justify-content-center align-items-center"
             style={{
               padding: "40px",
               background: "#222222",
@@ -65,55 +105,74 @@ const Portfolio = () => {
             <img
               style={{ height: "150px" }}
               alt="kathir-kreation-logo"
-              src={logo}
+              src="https://media1.giphy.com/media/mPRsPIrYnWNSEPs40i/giphy.gif?cid=ecf05e47oivi905iegbus70qstx2xaetmpktrw97xst9t7h1&rid=giphy.gif"
             />
-            <h1 className="text-white">What sets us apart?</h1>
+            <h1 className="text-white pl-md-4 pl-0">Portfolio</h1>
           </motion.div>
         </motion.div>
       </div>
-      <section className="pt-5">
-        <h1 className="textgradient bigger text-center">Associate Partners</h1>
+      <div className="d-md-none d-block" style={{ padding: "13vh" }} />
+      <section className="pt-5 mt-5">
+        <h3 className="textgradient pt-5  text-center">Clients</h3>
+        <Marquee
+          direction="right"
+          speed={60}
+          gradient
+          gradientColor={[238, 238, 237]}
+        >
+          <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+            <motion.div variants={fade}>
+              <section id="clients" className="d-flex">
+                <MotionCard src={bfe} />
+                <MotionCard src={blackdots} />
+                <MotionCard src={geonxtresources} />
+                <MotionCard src={eventplanners} />
+                <MotionCard src={intuition} />
+                <MotionCard src={madraschat} />
+                <MotionCard src={roche} />
+                <MotionCard src={shabir} />
+                <MotionCard src={shoestudio} />
+                <MotionCard src={vikashini} />
+              </section>
+            </motion.div>
+          </motion.div>
+        </Marquee>
+
+        <h3 className="textgradient pt-5 mt-5  text-center">Posters</h3>
         <Marquee speed={60} gradient gradientColor={[238, 238, 237]}>
           <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
             <motion.div variants={fade}>
-              <section className="d-flex">
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: -5 }}
-                  className="card m-5"
-                  style={{ width: "10rem" }}
-                >
-                  <div className="card-body  d-flex align-items-center">
-                    <img
-                      className="card-img-top"
-                      src={masterchannel}
-                      alt="Card cap"
-                    />
-                  </div>
-                </motion.div>
+              <section id="posters" className="d-flex">
+                <MotionCard src={blackdotsposter} />
+                <MotionCard src={retouch} />
+                <MotionCard src={rotoract} />
+                <MotionCard src={shoestudioposter} />
+                <MotionCard src={singainaadu} />
+                <MotionCard src={sting} />
+                <MotionCard src={tapestry} />
+                <MotionCard src={shabir} />
+                <MotionCard src={shoestudio} />
+                <MotionCard src={vikashini} />
+              </section>
+            </motion.div>
+          </motion.div>
+        </Marquee>
 
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="card m-5"
-                  style={{ width: "10rem" }}
-                >
-                  <div className="card-body  d-flex align-items-center">
-                    <img className="card-img-top" src={luxe} alt="Card cap" />
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: -5 }}
-                  className="card m-5"
-                  style={{ width: "10rem" }}
-                >
-                  <div className="card-body d-flex align-items-center">
-                    <img
-                      className="card-img-top"
-                      src={midasstouch}
-                      alt="Card cap"
-                    />
-                  </div>
-                </motion.div>
+        <h3 className="textgradient pt-5  text-center">Works</h3>
+        <Marquee
+          direction="right"
+          speed={60}
+          gradient
+          gradientColor={[238, 238, 237]}
+        >
+          <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+            <motion.div variants={fade}>
+              <section id="works" className="d-flex">
+                <MotionCard src={emceebrit} />
+                <MotionCard src={hotelnamma} />
+                <MotionCard src={miraclemedia} />
+                <MotionCard src={mummymasala} />
+                <MotionCard src={stoifist} />
               </section>
             </motion.div>
           </motion.div>
