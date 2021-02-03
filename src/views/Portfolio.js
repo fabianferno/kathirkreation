@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
-import masterchannel from "../../assets/images/associate-clients/masterchannel.png";
-import midasstouch from "../../assets/images/associate-clients/midasstouch.png";
-import luxe from "../../assets/images/associate-clients/luxe-cinemas.jpg";
+import masterchannel from "../../assets/images/portfolio/bfe.jpg";
+import midasstouch from "../../assets/images/portfolio/blackdots.jpg";
+import luxe from "../../assets/images/portfolio/geonxtresources.jpg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const fade = {
