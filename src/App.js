@@ -11,6 +11,7 @@ import LayoutDefault from "./layouts/LayoutDefault";
 import Home from "./views/Home";
 import AboutUs from "./views/AboutUs";
 import ReachUs from "./views/ReachUs";
+import Portfolio from "./views/Portfolio";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -48,6 +49,12 @@ const App = () => {
             exact
             path="/reach-us"
             component={ReachUs}
+            layout={LayoutDefault}
+          />
+          <AppRoute
+            exact
+            path="/portfolio"
+            component={Portfolio}
             layout={LayoutDefault}
           />
         </Switch>

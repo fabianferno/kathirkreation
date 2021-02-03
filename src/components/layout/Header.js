@@ -142,6 +142,26 @@ const Header = ({
                   >
                     <li>
                       <Link
+                        to="/portfolio"
+                        className="button button-dark button-wide-mobile button-sm "
+                        onClick={closeMenu}
+                        style={{
+                          color: "#ffffff",
+                          backgroundColor: "#000000",
+                        }}
+                      >
+                        Portfolio
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul
+                    className={classNames(
+                      "list-reset text-xs",
+                      navPosition && `header-nav-${navPosition}`
+                    )}
+                  >
+                    <li>
+                      <Link
                         className="button button-dark button-wide-mobile button-sm "
                         to="/about-us"
                         onClick={closeMenu}

@@ -18,7 +18,7 @@ const FooterNav = ({ className, ...props }) => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="#0">Support</Link>
+          <Link to="/portfolio">Our works</Link>
         </li>
       </ul>
     </nav>
