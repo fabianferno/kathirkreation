@@ -137,8 +137,7 @@ const Portfolio = () => {
             </motion.div>
           </motion.div>
         </Marquee>
-
-        <h3 className="textgradient pt-5 mt-5  text-center">Posters</h3>
+        <h3 className="textgradient pt-5  text-center">Our Works</h3>
         <Marquee speed={60} gradient gradientColor={[238, 238, 237]}>
           <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
             <motion.div variants={fade}>
@@ -150,15 +149,11 @@ const Portfolio = () => {
                 <MotionCard src={singainaadu} />
                 <MotionCard src={sting} />
                 <MotionCard src={tapestry} />
-                <MotionCard src={shabir} />
-                <MotionCard src={shoestudio} />
-                <MotionCard src={vikashini} />
               </section>
             </motion.div>
           </motion.div>
         </Marquee>
 
-        <h3 className="textgradient pt-5  text-center">Works</h3>
         <Marquee
           direction="right"
           speed={60}
