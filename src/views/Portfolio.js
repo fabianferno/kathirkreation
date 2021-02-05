@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import FluidAnimation from "react-fluid-animation";
 
 // import client images
@@ -13,7 +14,7 @@ import intuition from "../assets/images/clients/intuition.png";
 import madraschat from "../assets/images/clients/madras-chat.jpg";
 import roche from "../assets/images/clients/roche.jpg";
 import shabir from "../assets/images/clients/shabir.png";
-import shoestudio from "../assets/images/clients/shabir.png";
+import shoestudio from "../assets/images/clients/shoe-studio.jpg";
 import vikashini from "../assets/images/clients/vikashini.jpg";
 
 // import poster images
@@ -51,10 +52,10 @@ function MotionCard(props) {
     <motion.div
       whileHover={{ scale: 1.1, rotate: -5 }}
       className="card m-5"
-      style={{ width: "10rem" }}
+      style={{ width: "12rem", lineHeight: "12rem" }}
     >
       <div className="card-body  d-flex align-items-center">
-        <img className="card-img-top" src={props.src} alt="Card cap" />
+        <img className="card-img-top" alt="Card cap" src={props.src} />
       </div>
     </motion.div>
   );
@@ -122,7 +123,7 @@ const Portfolio = () => {
         >
           <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
             <motion.div variants={fade}>
-              <section id="clients" className="d-flex">
+              <section id="works" className="d-flex">
                 <MotionCard src={bfe} />
                 <MotionCard src={blackdots} />
                 <MotionCard src={geonxtresources} />
@@ -137,41 +138,44 @@ const Portfolio = () => {
             </motion.div>
           </motion.div>
         </Marquee>
-        <h3 className="textgradient pt-5  text-center">Our Works</h3>
-        <Marquee speed={60} gradient gradientColor={[238, 238, 237]}>
-          <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
-            <motion.div variants={fade}>
-              <section id="posters" className="d-flex">
-                <MotionCard src={blackdotsposter} />
-                <MotionCard src={retouch} />
-                <MotionCard src={rotoract} />
-                <MotionCard src={shoestudioposter} />
-                <MotionCard src={singainaadu} />
-                <MotionCard src={sting} />
-                <MotionCard src={tapestry} />
-              </section>
-            </motion.div>
-          </motion.div>
-        </Marquee>
 
-        <Marquee
-          direction="right"
-          speed={60}
-          gradient
-          gradientColor={[238, 238, 237]}
-        >
-          <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
-            <motion.div variants={fade}>
-              <section id="works" className="d-flex">
-                <MotionCard src={emceebrit} />
-                <MotionCard src={hotelnamma} />
-                <MotionCard src={miraclemedia} />
-                <MotionCard src={mummymasala} />
-                <MotionCard src={stoifist} />
-              </section>
-            </motion.div>
-          </motion.div>
-        </Marquee>
+        <h3 className="textgradient pt-5  text-center">Our Works</h3>
+        <ResponsiveMasonry columnsCount={3}>
+          <Masonry>
+            <img
+              className="card-img-top p-2"
+              alt="Card cap"
+              src={blackdotsposter}
+            />
+            <img className="card-img-top p-2" alt="Card cap" src={retouch} />
+            <img className="card-img-top p-2" alt="Card cap" src={rotoract} />
+            <img
+              className="card-img-top p-2"
+              alt="Card cap"
+              src={shoestudioposter}
+            />
+            <img
+              className="card-img-top p-2"
+              alt="Card cap"
+              src={singainaadu}
+            />
+            <img className="card-img-top p-2" alt="Card cap" src={sting} />
+            <img className="card-img-top p-2" alt="Card cap" src={tapestry} />
+            <img className="card-img-top p-2" alt="Card cap" src={emceebrit} />
+            <img className="card-img-top p-2" alt="Card cap" src={hotelnamma} />
+            <img
+              className="card-img-top p-2"
+              alt="Card cap"
+              src={miraclemedia}
+            />
+            <img
+              className="card-img-top p-2"
+              alt="Card cap"
+              src={mummymasala}
+            />
+            <img className="card-img-top p-2" alt="Card cap" src={stoifist} />
+          </Masonry>
+        </ResponsiveMasonry>
       </section>
     </>
   );
