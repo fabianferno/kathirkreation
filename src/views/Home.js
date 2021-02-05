@@ -40,37 +40,27 @@ const Home = () => {
             style={{ position: "absolute", top: "30vh", left: "0", right: "0" }}
             className="container p-4"
           >
-            <motion.div
-              initial={{ scale: -0.5 }}
-              animate={{ rotate: 0, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
+            <div
+              drag
+              dragConstraints={{
+                top: -10,
+                left: -0,
+                right: 0,
+                bottom: 10,
+              }}
+              className="d-md-flex d-block justify-content-around align-items-center"
+              style={{
+                padding: "40px",
+                background: "#222222aa",
               }}
             >
-              <motion.div
-                drag
-                dragConstraints={{
-                  top: -10,
-                  left: -0,
-                  right: 0,
-                  bottom: 10,
-                }}
-                className="d-md-flex d-block justify-content-around align-items-center"
-                style={{
-                  padding: "40px",
-                  background: "#222222",
-                }}
-              >
-                <img
-                  style={{ height: "150px" }}
-                  alt="kathir-kreation-logo"
-                  src="https://media2.giphy.com/media/U3JUglziycDHMhyNou/giphy.gif"
-                />
-                <h1 className="text-white">We care for your creativity</h1>
-              </motion.div>
-            </motion.div>
+              <img
+                style={{ height: "150px" }}
+                alt="kathir-kreation-logo"
+                src="https://media2.giphy.com/media/U3JUglziycDHMhyNou/giphy.gif"
+              />
+              <h1 className="text-white">We care for your creativity</h1>
+            </div>
           </div>
           <Hero className="illustration-section-01" />
           <FeaturesTiles />
