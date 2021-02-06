@@ -51,12 +51,10 @@ function MotionCard(props) {
   return (
     <motion.div
       whileHover={{ scale: 1.1, rotate: -5 }}
-      className="card m-5"
-      style={{ width: "12rem", lineHeight: "12rem" }}
+      className="card m-5 d-flex align-items-center"
+      style={{ width: "8em", height: "8em" }}
     >
-      <div className="card-body  d-flex align-items-center">
-        <img className="card-img-top" alt="Card cap" src={props.src} />
-      </div>
+      <img className="card-body img-fluid" alt="Card cap" src={props.src} />
     </motion.div>
   );
 }
@@ -116,9 +114,10 @@ const Portfolio = () => {
       <section className="pt-5 mt-5">
         <h3 className="textgradient pt-5  text-center">Clients</h3>
         <Marquee
-          direction="right"
-          speed={60}
+          direction="left"
+          speed={80}
           gradient
+          gradientWidth={100}
           gradientColor={[238, 238, 237]}
         >
           <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
