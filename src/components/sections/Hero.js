@@ -40,24 +40,9 @@ const Hero = ({
   return (
     <section {...props} className={outerClasses} style={{ paddingTop: "0px" }}>
       <div className="container">
-        <p style={{ fontSize: "0.8em", textAlign: "end" }}>Drag & Explore ^</p>
         <div className={innerClasses}>
           <div className="hero-content pb-5">
             <div className="container">
-              <p
-                style={{ textAlign: "center" }}
-                className="m-0 mb-32 reveal-from-bottom "
-                data-reveal-delay="400"
-              >
-                Our company is the persona of influence which forges brands that
-                are developing to accomplish their full potential and help them
-                exceed their unimaginable boundaries. We develop what you
-                create. With 8 years of experience we have learnt to cultivate
-                the art of brand building by honing and implementing our skills
-                across the globe. We focus on influencing the brand in strategy,
-                design and externships.
-              </p>
-
               <div
                 style={{ marginTop: "50px" }}
                 className="reveal-from-bottom"
