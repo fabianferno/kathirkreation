@@ -112,33 +112,7 @@ const Portfolio = () => {
       </div>
       <div className="d-md-none d-block" style={{ padding: "13vh" }} />
       <section className="pt-5 mt-5">
-        <h3 className="textgradient pt-5  text-center">Clients</h3>
-        <Marquee
-          direction="left"
-          speed={80}
-          gradient
-          gradientWidth={100}
-          gradientColor={[238, 238, 237]}
-        >
-          <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
-            <motion.div variants={fade}>
-              <section id="works" className="d-flex">
-                <MotionCard src={bfe} />
-                <MotionCard src={blackdots} />
-                <MotionCard src={geonxtresources} />
-                <MotionCard src={eventplanners} />
-                <MotionCard src={intuition} />
-                <MotionCard src={madraschat} />
-                <MotionCard src={roche} />
-                <MotionCard src={shabir} />
-                <MotionCard src={shoestudio} />
-                <MotionCard src={vikashini} />
-              </section>
-            </motion.div>
-          </motion.div>
-        </Marquee>
-
-        <h3 className="textgradient pt-5  text-center">Our Works</h3>
+        <h3 className="pt-3"></h3>
         <ResponsiveMasonry columnsCount={3}>
           <Masonry>
             <img
@@ -175,6 +149,32 @@ const Portfolio = () => {
             <img className="card-img-top p-2" alt="Card cap" src={stoifist} />
           </Masonry>
         </ResponsiveMasonry>
+
+        <h3 className="textgradient pt-5  text-center">Clients</h3>
+        <Marquee
+          direction="left"
+          speed={80}
+          gradient
+          gradientWidth={100}
+          gradientColor={[238, 238, 237]}
+        >
+          <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+            <motion.div variants={fade}>
+              <section id="works" className="d-flex">
+                <MotionCard src={bfe} />
+                <MotionCard src={blackdots} />
+                <MotionCard src={geonxtresources} />
+                <MotionCard src={eventplanners} />
+                <MotionCard src={intuition} />
+                <MotionCard src={madraschat} />
+                <MotionCard src={roche} />
+                <MotionCard src={shabir} />
+                <MotionCard src={shoestudio} />
+                <MotionCard src={vikashini} />
+              </section>
+            </motion.div>
+          </motion.div>
+        </Marquee>
       </section>
     </>
   );
