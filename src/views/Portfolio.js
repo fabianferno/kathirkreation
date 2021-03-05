@@ -110,9 +110,9 @@ const Portfolio = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="d-md-none d-block" style={{ padding: "13vh" }} />
+      <div className="d-block d-md-none" style={{ padding: "15vh" }} />
       <section className="pt-5 mt-5">
-        <ResponsiveMasonry columnsCount={3}>
+        <ResponsiveMasonry columnsCount={3} className="mt-0 mt-md-5 ">
           <Masonry>
             <img
               className="card-img-top p-2"
