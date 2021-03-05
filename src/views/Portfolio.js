@@ -112,7 +112,6 @@ const Portfolio = () => {
       </div>
       <div className="d-md-none d-block" style={{ padding: "13vh" }} />
       <section className="pt-5 mt-5">
-        <h3 className="pt-3"></h3>
         <ResponsiveMasonry columnsCount={3}>
           <Masonry>
             <img
