@@ -83,7 +83,7 @@ const AboutUs = () => {
                     width="100%"
                     height={500}
                     id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=Kumaran%20Colony&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Mookambikai%20nagar%204th%20Street%20Ramapuram&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameBorder={0}
                     scrolling="no"
                     marginHeight={0}
@@ -123,7 +123,7 @@ const AboutUs = () => {
                 href="https://goo.gl/maps/UNezraM7fbg9XY959"
                 className="btn text-white btn-dark btn-block text-left  mr-md-2 mr-0"
               >
-                Visit Us
+                Visit Us ^
               </a>
 
               <a
@@ -131,14 +131,14 @@ const AboutUs = () => {
                 href="https://api.whatsapp.com/send?phone=919940070908"
                 className="btn text-white  btn-secondary btn-block text-left mt-md-2"
               >
-                Whatsapp
+                Whatsapp - 994 007 0908
               </a>
               <a
                 rel="noopener noreferrer"
                 href="tel:919940070908"
                 className="btn text-dark font-weight-bold bg-warning btn-block text-left mt-md-2"
               >
-                Call
+                Call - 900 327 3055
               </a>
             </div>
           </div>
