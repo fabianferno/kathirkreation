@@ -112,7 +112,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 mt-3">
+            <div className="col-12 col-md-6 mt-3 ">
               <p className="h4">
                 Make a choice, take a stand for your brand and make the first
                 move! We'd be glad to hear your story!

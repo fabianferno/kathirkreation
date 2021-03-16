@@ -84,7 +84,7 @@ const Home = () => {
           <div style={{ paddingTop: "500px" }} className="d-md-none d-block" />
           <section className="illustration-section-01 pt-5">
             <div className="container text-center">
-              <h1>Hello there, This is Kathir Kreation.</h1>
+              <h1>Hello there, We are Kathir Kreation.</h1>
             </div>
           </section>
 

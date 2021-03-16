@@ -41,7 +41,7 @@ function AssociateCard(props) {
       }}
     >
       <div className="card-body  d-flex align-items-center">
-        <img className="card-img-top p-2" src={props.src} alt="Card cap" />
+        <img className="card-img-top p-2 " src={props.src} alt="Card cap" />
       </div>
     </motion.div>
   );
@@ -58,10 +58,10 @@ const Associates = () => {
         className="d-flex justify-content-center"
       >
         <motion.div variants={fade}>
-          <section className="d-flex">
-            <AssociateCard src={masterchannel} />
-            <AssociateCard src={luxe} />
-            <AssociateCard src={midasstouch} />
+          <section className="d-block d-md-flex">
+            <AssociateCard className="col-12 col-md-4" src={masterchannel} />
+            <AssociateCard className="col-12 col-md-4" src={luxe} />
+            <AssociateCard className="col-12 col-md-4" src={midasstouch} />
           </section>
         </motion.div>
       </motion.div>
