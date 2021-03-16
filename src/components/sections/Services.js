@@ -36,8 +36,16 @@ function ServicesCard(props) {
             <motion.div
               className="m-2"
               variants={fade}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
+              animate={{
+                scale: [1, 1.05, 1.05, 1, 1],
+                borderRadius: ["15%", "15%", "30%", "30%", "15%"],
+              }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                loop: Infinity,
+              }}
             >
               <img
                 className="card-img-top p-2"
@@ -129,7 +137,7 @@ const Services = ({
             <ServicesCard
               image={brandLaunching}
               title="Brand Launching"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="With enough foresight and planning, however, even the most complex brand launch can go off without a hitch."
             />
 
             <ServicesCard
@@ -141,37 +149,37 @@ const Services = ({
             <ServicesCard
               image={visualIdentityDesign}
               title="Visual Identity Design"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="In branding, “what you see” is a brand’s visual identity. We make sure your your audience find what matters most."
             />
 
             <ServicesCard
               image={digitalMarketing}
               title="Digital Marketing"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="Digital marketing encompasses all marketing efforts that use an electronic device or the internet.  "
             />
 
             <ServicesCard
               image={webDesign}
               title="Web Design"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="It's about how an audience connects with your company on multiple levels, and through different brand touch points. "
             />
 
             <ServicesCard
               image={socialDesign}
               title="Social Design"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="Keep in mind, 'Consistency is the Key'. And we take care of that for you with no hassle."
             />
 
             <ServicesCard
               image={graphicDesign}
               title="Graphic Design"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="Graphic design and branding are two separate parts of a successful marketing strategy.  "
             />
 
             <ServicesCard
               image={photography}
               title="Photography"
-              description="Branding is absolutely critical to a business because of the overall impact it makes on your company. "
+              description="Our in-house photography services team made up of professional photographers can add value to your needs. "
             />
           </div>
         </div>

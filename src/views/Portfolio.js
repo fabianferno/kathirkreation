@@ -90,7 +90,7 @@ function WorksCard(props) {
 
 const Portfolio = () => {
   return (
-    <>
+    <motion.div variants={fade}>
       <FluidAnimation
         config={{
           textureDownsample: 1,
@@ -179,7 +179,7 @@ const Portfolio = () => {
           </motion.div>
         </Marquee>
       </motion.div>
-    </>
+    </motion.div>
   );
 };
 
