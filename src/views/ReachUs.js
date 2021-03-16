@@ -136,7 +136,7 @@ const AboutUs = () => {
               <a
                 rel="noopener noreferrer"
                 href="https://api.whatsapp.com/send?phone=919940070908"
-                className="btn text-white  btn-secondary btn-block text-left mt-md-2"
+                className="btn text-white  btn-success btn-block text-left mt-md-2"
               >
                 Whatsapp - 994 007 0908
               </a>
@@ -145,7 +145,7 @@ const AboutUs = () => {
                 href="tel:919940070908"
                 className="btn text-dark font-weight-bold bg-warning btn-block text-left mt-md-2"
               >
-                Call - 900 327 3055
+                Call - +91 90032 73055
               </a>
             </div>
           </div>
