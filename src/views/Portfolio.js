@@ -19,6 +19,8 @@ import vikashini from "../assets/images/clients/vikashini.jpg";
 
 // import poster images
 import blackdotsposter from "../assets/images/posters/black-dots-poster.jpg";
+import blackdots2 from "../assets/images/posters/blackdots-2.png";
+import blackdots3 from "../assets/images/posters/blackdots-3.jpg";
 import retouch from "../assets/images/posters/retouch.jpg";
 import rotoract from "../assets/images/posters/rotoract-poster.jpg";
 import shoestudioposter from "../assets/images/posters/shoe-studio-poster.jpg";
@@ -47,14 +49,41 @@ const fade = {
   },
 };
 
-function MotionCard(props) {
+function ClientsCard(props) {
   return (
     <motion.div
       whileHover={{ scale: 1.1, rotate: -5 }}
       className="card m-5 d-flex align-items-center"
-      style={{ width: "8em", height: "8em" }}
+      style={{
+        width: "8em",
+        height: "8em",
+        boxShadow:
+          "0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.16)",
+      }}
     >
       <img className="card-body img-fluid" alt="Card cap" src={props.src} />
+    </motion.div>
+  );
+}
+
+function WorksCard(props) {
+  return (
+    <motion.div
+      className="m-2"
+      variants={fade}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <img
+        className="card-img-top p-2"
+        alt="Card cap"
+        style={{
+          borderRadius: "20px",
+          boxShadow:
+            "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+        }}
+        src={props.src}
+      />
     </motion.div>
   );
 }
@@ -79,73 +108,50 @@ const Portfolio = () => {
         className="container p-4"
       >
         <motion.div
-          initial={{ scale: -0.8 }}
-          animate={{ rotate: 0, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
+          drag
+          dragConstraints={{
+            top: -10,
+            left: -0,
+            right: 0,
+            bottom: 10,
+          }}
+          className="d-md-flex d-block justify-content-center align-items-center"
+          style={{
+            padding: "40px",
+            background: "#222222",
           }}
         >
-          <motion.div
-            drag
-            dragConstraints={{
-              top: -10,
-              left: -0,
-              right: 0,
-              bottom: 10,
-            }}
-            className="d-md-flex d-block justify-content-center align-items-center"
-            style={{
-              padding: "40px",
-              background: "#222222",
-            }}
-          >
-            <img
-              style={{ height: "150px" }}
-              alt="kathir-kreation-logo"
-              src="https://media1.giphy.com/media/mPRsPIrYnWNSEPs40i/giphy.gif?cid=ecf05e47oivi905iegbus70qstx2xaetmpktrw97xst9t7h1&rid=giphy.gif"
-            />
-            <h1 className="text-white pl-md-4 pl-0">Portfolio</h1>
-          </motion.div>
+          <img
+            style={{ height: "150px" }}
+            alt="kathir-kreation-logo"
+            src="https://media1.giphy.com/media/mPRsPIrYnWNSEPs40i/giphy.gif?cid=ecf05e47oivi905iegbus70qstx2xaetmpktrw97xst9t7h1&rid=giphy.gif"
+          />
+          <h1 className="text-white pl-md-4 pl-0">Portfolio</h1>
         </motion.div>
       </div>
-      <div className="d-block d-md-none" style={{ padding: "15vh" }} />
-      <section className="pt-5 mt-5">
-        <ResponsiveMasonry columnsCount={3} className="mt-0 mt-md-5 ">
+      <div className="d-block d-md-none " style={{ padding: "15vh" }} />
+      <motion.div
+        exit={{ opacity: 0 }}
+        initial="initial"
+        animate="animate"
+        className="pt-5 mt-5"
+      >
+        <ResponsiveMasonry columnsCount={3} className="mt-0 mt-md-5 container">
           <Masonry>
-            <img
-              className="card-img-top p-2"
-              alt="Card cap"
-              src={blackdotsposter}
-            />
-            <img className="card-img-top p-2" alt="Card cap" src={retouch} />
-            <img className="card-img-top p-2" alt="Card cap" src={rotoract} />
-            <img
-              className="card-img-top p-2"
-              alt="Card cap"
-              src={shoestudioposter}
-            />
-            <img
-              className="card-img-top p-2"
-              alt="Card cap"
-              src={singainaadu}
-            />
-            <img className="card-img-top p-2" alt="Card cap" src={sting} />
-            <img className="card-img-top p-2" alt="Card cap" src={tapestry} />
-            <img className="card-img-top p-2" alt="Card cap" src={emceebrit} />
-            <img className="card-img-top p-2" alt="Card cap" src={hotelnamma} />
-            <img
-              className="card-img-top p-2"
-              alt="Card cap"
-              src={miraclemedia}
-            />
-            <img
-              className="card-img-top p-2"
-              alt="Card cap"
-              src={mummymasala}
-            />
-            <img className="card-img-top p-2" alt="Card cap" src={stoifist} />
+            <WorksCard src={blackdotsposter} />
+            <WorksCard src={blackdots2} />
+            <WorksCard src={blackdots3} />
+            <WorksCard src={retouch} />
+            <WorksCard src={rotoract} />
+            <WorksCard src={shoestudioposter} />
+            <WorksCard src={singainaadu} />
+            <WorksCard src={emceebrit} />
+            <WorksCard src={hotelnamma} />
+            <WorksCard src={miraclemedia} />
+            <WorksCard src={mummymasala} />
+            <WorksCard src={sting} />
+            <WorksCard src={stoifist} />
+            <WorksCard src={tapestry} />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -158,23 +164,21 @@ const Portfolio = () => {
           gradientColor={[238, 238, 237]}
         >
           <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
-            <motion.div variants={fade}>
-              <section id="works" className="d-flex">
-                <MotionCard src={bfe} />
-                <MotionCard src={blackdots} />
-                <MotionCard src={geonxtresources} />
-                <MotionCard src={eventplanners} />
-                <MotionCard src={intuition} />
-                <MotionCard src={madraschat} />
-                <MotionCard src={roche} />
-                <MotionCard src={shabir} />
-                <MotionCard src={shoestudio} />
-                <MotionCard src={vikashini} />
-              </section>
+            <motion.div variants={fade} id="works" className="d-flex">
+              <ClientsCard src={bfe} />
+              <ClientsCard src={blackdots} />
+              <ClientsCard src={geonxtresources} />
+              <ClientsCard src={eventplanners} />
+              <ClientsCard src={intuition} />
+              <ClientsCard src={madraschat} />
+              <ClientsCard src={roche} />
+              <ClientsCard src={shabir} />
+              <ClientsCard src={shoestudio} />
+              <ClientsCard src={vikashini} />
             </motion.div>
           </motion.div>
         </Marquee>
-      </section>
+      </motion.div>
     </>
   );
 };

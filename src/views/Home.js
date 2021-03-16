@@ -1,7 +1,6 @@
 import React from "react";
-import Hero from "../components/sections/Hero";
 import Associates from "../components/sections/Associates";
-import FeaturesTiles from "../components/sections/FeaturesTiles";
+import Services from "../components/sections/Services";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
 import heroImg from "../assets/images/hero.jpg";
@@ -37,9 +36,7 @@ const Home = () => {
             }}
             style={{ height: "100vh", width: "100vw" }}
           />
-          <p style={{ fontSize: "0.8em", textAlign: "end" }}>
-            Drag & Explore ^
-          </p>
+
           <div
             style={{
               position: "absolute",
@@ -85,8 +82,13 @@ const Home = () => {
             </div>
           </div>
           <div style={{ paddingTop: "500px" }} className="d-md-none d-block" />
-          <Hero className="illustration-section-01 pt-5" />
-          <FeaturesTiles />
+          <section className="illustration-section-01 pt-5">
+            <div className="container text-center">
+              <h1>Hello there, This is Kathir Kreation.</h1>
+            </div>
+          </section>
+
+          <Services />
           <Associates />
         </motion.div>
       </motion.div>

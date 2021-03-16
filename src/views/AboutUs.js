@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import FeaturesSplit from "../components/sections/FeaturesSplit";
+import AboutUsContent from "../components/sections/AboutUsContent";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
 import logo from "../assets/images/logo.svg";
@@ -72,7 +72,7 @@ const AboutUs = () => {
           </motion.div>
         </div>
         <div className="d-md-none d-block" style={{ padding: "13vh" }} />
-        <FeaturesSplit invertMobile topDivider imageFill className="" />
+        <AboutUsContent invertMobile topDivider imageFill className="" />
       </motion.div>
     </motion.div>
   );

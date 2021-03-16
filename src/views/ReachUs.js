@@ -77,7 +77,14 @@ const AboutUs = () => {
           <div className="row d-flex mt-5 mt-md-0 pt-md-0 pt-5 align-items-center">
             <div className="col-12 col-md-6">
               <div className="mapouter p-1 d-flex justify-content-center">
-                <div className="gmap_canvas ">
+                <div
+                  className="gmap_canvas "
+                  style={{
+                    borderRadius: "25px",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  }}
+                >
                   <iframe
                     title="Maps"
                     width="100%"
