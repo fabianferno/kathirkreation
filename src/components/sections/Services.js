@@ -34,36 +34,47 @@ function ServicesCard(props) {
         <div className="features-tiles-item-header">
           <div className=" mb-16">
             <motion.div
-              className="m-2"
+              className="m-2 p-3"
               variants={fade}
               animate={{
-                scale: [1, 1.05, 1.05, 1, 1],
-                borderRadius: ["15%", "15%", "30%", "30%", "15%"],
+                scale: [1.05, 1, 1.05, 1, 1.05],
               }}
               transition={{
-                duration: 1,
+                duration: 5,
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
                 loop: Infinity,
+              }}
+              drag
+              dragConstraints={{
+                top: -10,
+                left: -10,
+                right: 10,
+                bottom: 10,
+              }}
+              style={{
+                background: "#ffffff",
+                borderRadius: "20px",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}
             >
               <img
                 className="card-img-top p-2"
                 alt="Card cap"
+                aria-label="hidden"
                 style={{
                   height: "250px",
-                  borderRadius: "20px",
-                  boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  pointerEvents: "none",
                 }}
                 src={props.image}
               />
+              <div className="features-tiles-item-content">
+                <h4 className="mt-0 mb-8 pt-3">{props.title}</h4>
+                <p className="m-0 text-sm">{props.description}</p>
+              </div>
             </motion.div>
           </div>
-        </div>
-        <div className="features-tiles-item-content">
-          <h4 className="mt-0 mb-8 pt-3">{props.title}</h4>
-          <p className="m-0 text-sm">{props.description}</p>
         </div>
       </div>
     </div>
