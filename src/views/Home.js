@@ -3,7 +3,6 @@ import Associates from "../components/sections/Associates";
 import Services from "../components/sections/Services";
 import FluidAnimation from "react-fluid-animation";
 import { motion } from "framer-motion";
-import heroImg from "../assets/images/hero.jpg";
 import logo from "../assets/images/logo.svg";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
