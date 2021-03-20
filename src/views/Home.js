@@ -59,7 +59,7 @@ const Home = () => {
               marginLeft: "auto",
               marginRight: "auto",
             }}
-            className="container p-5"
+            className="container p-3"
             variants={fade1}
           >
             <div
@@ -80,7 +80,7 @@ const Home = () => {
                   duration: 4,
                   ease: "easeInOut",
                   times: [0, 0.2, 0.5, 0.8, 1],
-                  // loop: Infinity,
+                  //loop: Infinity,
                 }}
                 drag
                 dragConstraints={{
@@ -99,8 +99,13 @@ const Home = () => {
               </motion.div>
 
               <div className="d-block pl-md-4 pl-0 col-md-8">
-                <h1 className="text-white">We care for your creativity</h1>
-                <p className="text-white text-justify">
+                <h1 className="text-white" style={{ fontSize: "2rem" }}>
+                  We care for your creativity
+                </h1>
+                <p
+                  className="text-white text-justify"
+                  style={{ fontSize: "0.8rem" }}
+                >
                   Our company is the persona of influence which forges brands
                   that are developing to accomplish their full potential and
                   help them exceed their unimaginable boundaries. We develop
@@ -112,10 +117,12 @@ const Home = () => {
               </div>
             </div>
           </motion.div>
+
           <div style={{ paddingTop: "500px" }} className="d-md-none d-block" />
+
           <section className="illustration-section-01 pt-5">
             <div className="container text-center">
-              <h1>Hello there, We are Kathir Kreation.</h1>
+              <h1> Hello there, We are Kathir Kreation. </h1>
             </div>
           </section>
 
