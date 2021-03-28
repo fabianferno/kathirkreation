@@ -52,6 +52,7 @@ const fade = {
 function ClientsCard(props) {
   return (
     <motion.div
+      loading="lazy"
       whileHover={{ scale: 1.1, rotate: -5 }}
       className="card m-5 d-flex align-items-center"
       style={{
@@ -75,6 +76,7 @@ function WorksCard(props) {
       whileTap={{ scale: 0.9 }}
     >
       <img
+        loading="lazy"
         className="card-img-top p-2"
         alt="Card cap"
         style={{

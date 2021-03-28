@@ -23,8 +23,8 @@ function AssociateCard(props) {
   return (
     <motion.div
       animate={{
-        scale: [1, 1.4, 1.4, 1, 1],
-        borderRadius: ["15%", "15%", "30%", "30%", "15%"],
+        scale: [1, 1.2, 1.2, 1, 1],
+        borderRadius: ["20%", "20%", "10%", "10%", "20%"],
       }}
       transition={{
         duration: 2,
